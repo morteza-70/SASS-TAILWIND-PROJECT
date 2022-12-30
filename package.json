@@ -1,8 +1,14 @@
 {
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   },
   "emmet.includeLanguages": {
     "postcss": "css"
+  },
+  "dependencies": {
+    "node-sass": "^8.0.0"
   }
 }
