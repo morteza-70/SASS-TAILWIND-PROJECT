@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "tailwind": "TAILWIND_MODE=watch postcss ./src/css/tailwind.css -o ./dist/css/tailwind.css -w --verbose"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "postcss-import": "^15.1.0",
-    "tailwindcss": "^3.2.4"
-  },
   "emmet.includeLanguages": {
     "postcss": "css"
   },
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "autoprefixer": "^10.4.13",
+    "flowbite": "^1.5.5",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.4"
   }
 }

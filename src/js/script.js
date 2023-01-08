@@ -1,4 +1,4 @@
-// Burger menus
+// Start Burger menus
 document.addEventListener('DOMContentLoaded', function() {
   // open
   const burger = document.querySelectorAll('.navbar-burger');
@@ -38,3 +38,41 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 });
+// End Burger menus
+
+
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+
+// Start Spaghetti Section
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        // document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.theme = 'dark';
+        document.documentElement.classList.add('dark')
+    }
+    else {
+        // document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.theme = 'light';
+        document.documentElement.classList.remove('dark')
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+// End Spaghetti Section
