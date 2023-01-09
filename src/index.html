@@ -28,21 +28,27 @@
                 <img class="h-10" alt="logo" viewBox="0 0 100 100" src="img/logo.svg" />
                 <div class="mr-[5px]">سیلیکُن</div>
             </a>
+
+            <!-- Start slider switch -->
             <div class="theme-switch-wrapper flex items-center">
                 <em class="ml-[10px] text-[16px]">تیره</em>
                     <label class="theme-switch relative inline-block h-[34px] w-[60px]" for="checkbox">
-                        <input type="checkbox" id="checkbox" class="hidden"  />                          
+                        <input class="peer hidden" type="checkbox" id="checkbox"/>                          
                         <div class="slider round 
+                            peer-checked:bg-[#66bb6a]
+                            before:peer-checked:translate-x-[26px]
                             before:w-[26px] before:h-[26px]
-                            before:bg-[#fff] before:bottom-[4px] before:left-[4px]
-                            before:absolute before:transition-[.4s] before:content-['']
-                            before:rounded-[50%] rounded-[34px]
-                            absolute transition-[.4s]
+                          before:bg-[#fff] before:bottom-[4px] before:left-[4px]
+                            before:absolute before:transition-[.4s]
+                            before:content-[''] before:rounded-[50%]
+                            rounded-[34px] absolute transition-[.4s]
                             inset-0 cursor-pointer bg-[#ccc]">
                         </div>
                     </label>
                 <em class="mr-[10px] text-[16px]">روشن</em>
             </div>
+            <!-- End slider switch -->
+
             <div class="lg:hidden">
                 <button class="navbar-burger flex items-center text-gray-400 p-3">
                     <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
