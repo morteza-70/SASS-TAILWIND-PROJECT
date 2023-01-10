@@ -1,5 +1,5 @@
     <!doctype html>
-    <html dir="rtl" class="dark">
+    <html lang="fa" dir="rtl" class="dark">
     <!-- Strat Head -->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -22,59 +22,112 @@
 
     <body>
 
-        <!-- Start nav -->
-        <nav class="relative px-4 py-4 flex justify-between items-center dark:text-white bg-white dark:bg-gray-900">
-            <a href="#" class="text-2xl font-bold leading-none flex justify-between items-center px-[0.25rem]">
-                <img class="h-10" alt="logo" viewBox="0 0 100 100" src="img/logo.svg" />
-                <div class="mr-[5px]">سیلیکُن</div>
-            </a>
-
-            <!-- Start slider switch -->
-            <div class="theme-switch-wrapper flex items-center">
-                <em class="ml-[10px] text-[16px]">تیره</em>
-                    <label class="theme-switch relative inline-block h-[34px] w-[60px]" for="checkbox">
-                        <input class="peer hidden" type="checkbox" id="checkbox"/>                          
-                        <div class="slider round 
-                            peer-checked:bg-[#66bb6a]
-                            before:peer-checked:translate-x-[26px]
-                            before:w-[26px] before:h-[26px]
-                          before:bg-[#fff] before:bottom-[4px] before:left-[4px]
-                            before:absolute before:transition-[.4s]
-                            before:content-[''] before:rounded-[50%]
-                            rounded-[34px] absolute transition-[.4s]
-                            inset-0 cursor-pointer bg-[#ccc]">
-                        </div>
-                    </label>
-                <em class="mr-[10px] text-[16px]">روشن</em>
-            </div>
-            <!-- End slider switch -->
-
-            <div class="lg:hidden">
-                <button class="navbar-burger flex items-center text-gray-400 p-3">
-                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Mobile menu</title>
-                        <path d="M0 4h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </button>
-            </div>
-            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">لندینگ</a></li>
-                <li class="text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                    </svg>
+       
+<nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between space-x-4 items-center mx-auto max-w-screen-xl px-4 md:px-6 py-3.5">
+        <a href="https://flowbite.com" class="flex items-center">
+            <img src="img/logo.svg" class="mx-3 h-6 sm:h-9" alt="Silicon Logo" />
+            <span class="self-center text-xl font-[800px] whitespace-nowrap dark:text-white">سیلیکُن</span>
+        </a>
+        <button id="mega-menu-full-image-button" data-collapse-toggle="mega-menu-full-image" type="button" class="inline-flex items-center order-6 p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full-image" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div id="mega-menu-full-image" class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 text-sm font-medium md:flex-row md:space-x-8 md:mt-0">
+                <li>
+                    <a href="#" class="block ml-10 py-2 pl-4 pr-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">لندینگ</a>
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">صفحات</a></li>
-                <li class="text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                    </svg>
+                <li>
+                    <button id="mega-menu-full-cta-image-button" data-collapse-toggle="mega-menu-full-image-dropdown" class="flex justify-between items-center py-2 pl-4 pr-3 w-full font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">صفحات <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                 </li>
-                <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">نمونه کارها</a></li>
+                <li>
+                    <button id="mega-menu-full-cta-image-button" data-collapse-toggle="mega-menu-full-image-dropdown" class="flex justify-between items-center py-2 pl-4 pr-3 w-full font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">نمونه کارها <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                </li>
             </ul>
-            <a class="flex lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-[0.375rem] transition duration-200 mr-auto" href="#">اکنون خرید کنید</a>
-        </nav>
-        <!-- End nav -->        
+        </div>
+        <!-- Start slider switch -->
+        <div class="theme-switch-wrapper flex items-center order-4 dark:text-white">
+            <em class="ml-[10px] text-[16px]">تیره</em>
+                <label class="theme-switch relative inline-block h-[24px] w-[46px]" for="checkbox">
+                    <input class="peer hidden" type="checkbox" id="checkbox"/>                          
+                    <div class="slider round 
+                        peer-checked:bg-[#6366f1]
+                        before:peer-checked:translate-x-[20px]
+                        before:w-[18px] before:h-[18px]
+                        before:bg-[#fff] before:bottom-[4px] before:left-[4px]
+                        before:absolute before:transition-[.4s]
+                        before:content-[''] before:rounded-[50%]
+                        rounded-[34px] absolute transition-[.4s]
+                        inset-0 cursor-pointer bg-[#ccc]">
+                    </div>
+                </label>
+            <em class="mr-[10px] text-[16px]">روشن</em>
+        </div>
+        <!-- End slider switch -->
+
+        <div class="hidden md:flex items-center order-5 py-2 px-6 bg-blue-500
+        hover:bg-blue-600 text-sm text-white font-bold
+        rounded-[0.375rem] transition duration-200 mr-auto" href="#">
+            اکنون خرید کنید
+        </div>
+    </div>
+    <div id="mega-menu-full-image-dropdown" class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600">
+        <div class="grid py-5 px-4 mx-auto max-w-screen-xl text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+            <ul class="hidden mb-4 space-y-4 md:mb-0 md:block" aria-labelledby="mega-menu-full-image-button">
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Online Stores
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Segmentation
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Marketing CRM
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Online Stores
+                    </a>
+                </li>
+            </ul>
+            <ul class="mb-4 space-y-4 md:mb-0">
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Our Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Terms & Conditions
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        License
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                        Resources
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="p-8 text-left bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light dark:hover:bg-blend-darken" style="background-image: url(/docs/images/dashboard-overview.png)">
+                <p class="mb-5 max-w-xl font-extrabold tracking-tight leading-tight text-white">Preview the new Flowbite dashboard navigation.</p>
+                <button type="button" class="inline-flex items-center px-2.5 py-1.5 text-xs font-medium text-center text-white border border-white rounded-lg hover:bg-white hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-700">
+                    Get started
+                    <svg class="ml-1 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>       
 
         <!-- Start navbar-menu -->
         <div class="navbar-menu relative z-50 hidden bg-white">
