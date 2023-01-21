@@ -74,5 +74,4 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
-
 // End Spaghetti Section

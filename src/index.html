@@ -9,8 +9,16 @@
     <meta name="description" content="نمونه پروژه Tailwind, SASS">
 
     <!-- Start Global Styles -->
-    <link href="https://files.rtl-theme.com/plugins/fonts/dana/fonts.css" rel="stylesheet" media="all">   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css"  rel="stylesheet" />    
+    <link href="https://files.rtl-theme.com/plugins/fonts/dana/fonts.css" rel="stylesheet" media="all"> 
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+    /> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css"  rel="stylesheet" />   
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="../dist/css/main.css" rel="stylesheet">
     <link href="../dist/css/tailwind.css" rel="stylesheet">
     <link href="font/fonts.css" rel="stylesheet">
@@ -34,170 +42,208 @@
                 transform: translateY(-10%);
             }
         }
-        
+        .swiper {
+            width: 400px;
+            height: 400px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }     
     </style>
 </head>
 <!-- End Head -->
-<body class="bg-blue-500 font-dana">
-    <nav dir="rtl" class="relative px-4 py-4 flex flex-row justify-between items-center xl:px-[300px] lg:px-[100px] bg-white dark:border-gray-600 dark:bg-gray-900">
-        <a class="flex lg:basis-[60%] text-3xl font-bold leading-none" href="#">
-            <img src="img/logo.svg" class="mx-3 h-6 sm:h-9" alt="Silicon Logo" />
-            <span class="self-center text-xl font-[800px] whitespace-nowrap dark:text-white">سیلیکُن</span>
-        </a>
-        <ul class="hidden absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto dark:text-white">
-            <li class="relative parent">
-                <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
-                    <span class="ml-[5px]">لندینگ ها</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+<body class="font-dana">
+    <header>
+        <div class="px-auto">
+            <nav dir="rtl" class="relative px-4 py-4 flex flex-row justify-between items-center xl:px-[230px] lg:px-[100px] bg-white dark:border-gray-600 dark:bg-gray-900">
+                <a class="flex lg:basis-[60%] text-3xl font-bold leading-none" href="#">
+                    <img src="img/logo.svg" class="mx-3 h-6 sm:h-9" alt="Silicon Logo" />
+                    <span class="self-center text-xl font-[800px] whitespace-nowrap dark:text-white">سیلیکُن</span>
                 </a>
-                <ul class="child container grid grid-cols-3 transition duration-300 md:absolute top-full right-0 md:w-[40rem] rounded-[8px] bg-white dark:text-white dark:bg-gray-900 border border-slate-500 shadow-lg">
-                    <li>
-                        <span class="flex px-4 py-3">
-                            <h6 class="text-[16px] font-extrabold">درباره</h6>
-                        </span>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            درباره ۷.۱
+                <ul class="hidden absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto dark:text-white">
+                    <li class="relative parent">
+                        <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
+                            <span class="ml-[5px]">لندینگ ها</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                         </a>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            درباره ۷.۱
-                        </a>
+                        <ul class="child container grid grid-cols-3 transition duration-300 md:absolute top-full right-0 md:w-[40rem] rounded-[8px] bg-white dark:text-white dark:bg-gray-900 border border-slate-500 shadow-lg">
+                            <li>
+                                <span class="flex px-4 py-3">
+                                    <h6 class="text-[16px] font-extrabold">درباره</h6>
+                                </span>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    درباره ۷.۱
+                                </a>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    درباره ۷.۱
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
+                    <li class="relative parent">
+                        <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
+                            <span class="ml-[5px]">صفحات</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                         </a>
+                        <ul class="child container grid grid-cols-3 transition duration-300 md:absolute top-full right-0 md:w-[40rem] rounded-[8px] bg-white dark:text-white dark:bg-gray-900 border border-slate-500 shadow-lg">
+                            <li>
+                                <span class="flex px-4 py-3">
+                                    <h6 class="text-[16px] font-extrabold">درباره</h6>
+                                </span>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    درباره ۷.۱
+                                </a>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    درباره ۷.۱
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
+                    <li class="relative parent">
+                        <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
+                            <span class="ml-[5px]">نمونه کارها</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
+                        <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 rounded-[8px] bg-white dark:text-white dark:bg-gray-900 border border-slate-500 shadow-lg">
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
+                                    تستی
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
-            <li class="relative parent">
-                <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
-                    <span class="ml-[5px]">صفحات</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
-                </a>
-                <ul class="child container grid grid-cols-3 transition duration-300 md:absolute top-full right-0 md:w-[40rem] rounded-[8px] bg-white dark:text-white dark:bg-gray-900 border border-slate-500 shadow-lg">
-                    <li>
-                        <span class="flex px-4 py-3">
-                            <h6 class="text-[16px] font-extrabold">درباره</h6>
-                        </span>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            درباره ۷.۱
-                        </a>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            درباره ۷.۱
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="relative parent">
-                <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
-                    <span class="ml-[5px]">نمونه کارها</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
-                </a>
-                <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 rounded-[8px] bg-white dark:text-white dark:bg-gray-900 border border-slate-500 shadow-lg">
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex px-4 py-3 hover:text-[#6366f1]">
-                            تستی
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-        <!-- Start slider switch -->
-        <div class="theme-switch-wrapper flex items-center justify-between dark:text-white">
-            <em class="text-[16px]">تیره</em>
-                <label class="theme-switch relative inline-block h-[24px] w-[46px] mx-[10px]" for="checkbox">
-                    <input class="peer hidden" type="checkbox" id="checkbox"/>                          
-                    <div class="slider round 
-                        peer-checked:bg-[#6366f1]
-                        before:peer-checked:translate-x-[20px]
-                        before:w-[18px] before:h-[18px]
-                        before:bg-[#fff] before:bottom-[4px] before:left-[4px]
-                        before:absolute before:transition-[.4s]
-                        before:content-[''] before:rounded-[50%]
-                        rounded-[34px] absolute transition-[.4s]
-                        inset-0 cursor-pointer bg-[#ccc]">
-                    </div>
-                </label>
-            <em class="text-[16px]">روشن</em>
+        
+                <!-- Start slider switch -->
+                <div class="theme-switch-wrapper flex items-center justify-between dark:text-white">
+                    <em class="text-[16px] hidden md:block">تیره</em>
+                        <label class="theme-switch relative inline-block h-[24px] w-[46px] mx-[10px]" for="checkbox">
+                            <input class="peer hidden" type="checkbox" id="checkbox"/>                          
+                            <div class="slider round 
+                                peer-checked:bg-[#6366f1]
+                                before:peer-checked:translate-x-[20px]
+                                before:w-[18px] before:h-[18px]
+                                before:bg-[#fff] before:bottom-[4px] before:left-[4px]
+                                before:absolute before:transition-[.4s]
+                                before:content-[''] before:rounded-[50%]
+                                rounded-[34px] absolute transition-[.4s]
+                                inset-0 cursor-pointer bg-[#ccc]">
+                            </div>
+                        </label>
+                    <em class="text-[16px] hidden md:block">روشن</em>
+                </div>
+                <!-- End slider switch -->
+        
+                <div class="hidden lg:flex justify-center items-center py-[10px] px-[20px] bg-[#6366f1] hover:bg-[#6366f1] text-[0.75rem] text-white font-bold rounded-[0.375rem] transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+      
+                    <button class="text-sm mr-[5px]">اکنون خرید کنید</button>
+                </div>
+        
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center dark:text-white text-gray-900 p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>منوی موبایل</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
         </div>
-        <!-- End slider switch -->
+    </header>
 
-        <a class="hidden lg:flex lg:basis-[15%]  lg:justify-center py-[10px] px-[20px] bg-[#6366f1] hover:bg-[#6366f1] text-[0.75rem] text-white font-bold rounded-[0.375rem] transition duration-200" href="#">
-            <span>اکنون خرید کنید</span>
-        </a>
-
-        <div class="lg:hidden">
-            <button class="navbar-burger flex items-center dark:text-white text-gray-900 p-3">
-                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>منوی موبایل</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-            </button>
-        </div>
-    </nav>
-
-    <div dir="rtl" class="navbar-menu relative z-50 hidden bg-white dark:text-white dark:bg-gray-900">
+    <div dir="rtl" class="navbar-menu relative z-50 hidden lg:hidden bg-white dark:text-white dark:bg-gray-900">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:text-white dark:bg-gray-900 border-r overflow-y-auto">
             <div class="flex items-center mb-8">
@@ -280,25 +326,97 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">صفحات</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">نمونه کارها</a>
-                </li> -->
             </ul>
+
             <div class="mt-auto">
                 <div class="pt-6">
                     <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">
                         اکنون خرید کنید
                     </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
                 </div>
             </div>
-        </nav>
+        </nav>       
     </div>
+    <section class="relative flex flex-col justify-center items-center w-full h-[100vh] min-h-[400px] overflow-hidden bg-center bg-no-repeat bg-cover" 
+        style="background-image: url('https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/bg-scaled-1.jpg')">
+        <h1>Morteza Torkashvand</h1>
+        <p>Front End Developer</p>
+        <div class="socials">
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+        </div>
+    </section>
+    <!-- End Headline -->
+
+    <!-- Product List -->
+    <section class="py-10 text-centerbg-white dark:text-white dark:bg-gray-900">
+        <div class="mx-auto grid max-w-6xl  grid-cols-1  gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <article class="flex flex-col text-center rounded-[8px] p-3 hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+                <a href="#">
+                    <img class="inline mx-auto" src="img/a.svg"/>  
+                </a>
+                <h2 class="mx-auto mt-[60px]">The Hilton Hotel</h2>
+            </article> 
+            <article class="flex flex-col text-center rounded-[8px] p-3 hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+                <a href="#">
+                    <img class="inline mx-auto" src="img/a.svg"/>  
+                </a>
+                <h2 class="mx-auto mt-[60px]">The Hilton Hotel</h2>
+            </article> 
+            <article class="flex flex-col text-center rounded-[8px] p-3 hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+                <a href="#">
+                    <img class="inline mx-auto" src="img/a.svg"/>  
+                </a>
+                <h2 class="mx-auto mt-[60px]">The Hilton Hotel</h2>
+            </article> 
+            <article class="flex flex-col text-center rounded-[8px] p-3 hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+                <a href="#">
+                    <img class="inline mx-auto" src="img/a.svg"/>  
+                </a>
+                <h2 class="mx-auto mt-[60px]">The Hilton Hotel</h2>
+            </article> 
+        </div>
+    </section>
+  <!-- Swiper -->
+  <div class="relative h-full">
+    <div class="swiper mySwiper bg-[#eee] text-black">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  </div>
+
 
     <!-- Script Page -->
     <script src="js/script.js" type="text/javascript"></script>
     <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
 </body>   
 </html>
