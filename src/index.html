@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" class="dark">
+<html lang="fa" dir="rtl" class="dark">
 <!-- Strat Head -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,7 +9,13 @@
     <meta name="description" content="نمونه پروژه Tailwind, SASS">
 
     <!-- Start Global Styles -->
-    <link href="https://files.rtl-theme.com/plugins/fonts/dana/fonts.css" rel="stylesheet" media="all"/>   
+    <link href="https://files.rtl-theme.com/plugins/fonts/dana/fonts.css" rel="stylesheet" media="all"/> 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />  
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet"/> 
     <!-- Add the slick.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick.css"/>
@@ -74,6 +80,37 @@
             width: 50%;
             margin: 0px auto 50px auto;
         }
+        .content-headline {
+            display: grid;
+            place-items: center;
+            overflow-x: hidden;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .column:not(:nth-of-type(3)) {
+            animation: scale 1s linear both;
+            animation-timeline: scroll(root);
+        }
+
+        /* The distance is the number of cards minus 100vh */
+        .column:is(:nth-of-type(2), :nth-of-type(4)) {
+            --origin: calc(var(--gap) * -1);
+            --destination: calc(var(--card-height) * 1.5 + var(--gap));
+        }
+        .column:is(:nth-of-type(1), :nth-of-type(5)) {
+            --origin: calc(var(--gap) * -2);
+            --destination: calc(var(--card-height) * 3.4 + var(--gap));
+        }
+
+        @keyframes scale {
+            0% {
+                transform: translateY(var(--origin, 0%));
+            }
+            100% {
+                transform: translateY(var(--destination, -50%));
+            }
+        }
+
         /* Media Queries */
         /* Mobile Devices */
         @media only screen and (max-width: 480px) { 
@@ -112,11 +149,11 @@
 <body class="font-dana dark:bg-gray-900">
     <header>
         <div class="px-auto">
-            <nav dir="rtl" class="relative px-4 py-4 flex flex-row justify-between items-center xl:px-[230px] lg:px-[100px] bg-white dark:border-gray-600 dark:bg-gray-900">
-                <a class="flex lg:basis-[60%] text-3xl font-bold leading-none" href="#">
+            <nav class="relative px-4 py-4 flex flex-row justify-between items-center xl:px-[230px] lg:px-[100px] bg-white dark:border-gray-600 dark:bg-gray-900">
+                <div class="flex justify-center items-center text-right text-3xl font-bold leading-none" href="#">
                     <img src="img/logo.svg" class="mx-3 h-6 sm:h-9" alt="Silicon Logo" />
-                    <span class="self-center text-xl font-[800px] whitespace-nowrap dark:text-white">سیلیکُن</span>
-                </a>
+                    <span class="self-center text-xl font-[800px] whitespace-nowrap dark:text-white text-right">سیلیکُن</span>
+                </div>
                 <ul class="hidden absolute top-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto dark:text-white">
                     <li class="relative parent">
                         <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:text-[#6366f1]">
@@ -276,7 +313,7 @@
         </div>
     </header>
 
-    <div dir="rtl" class="navbar-menu relative z-50 hidden lg:hidden bg-white dark:text-white dark:bg-gray-900">
+    <div class="navbar-menu relative z-50 hidden lg:hidden bg-white dark:text-white dark:bg-gray-900">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:text-white dark:bg-gray-900 border-r overflow-y-auto">
             <div class="flex items-center mb-8">
@@ -368,26 +405,41 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                     </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                      </svg>
+        
+                      <button class="mr-[5px]">اکنون خرید کنید</button>
                 </div>
             </div>
         </nav>       
     </div>
 
     <!-- Start Headline -->
-    <section class="flex flex-col justify-center items-center w-full h-[100vh] min-h-[400px] overflow-hidden bg-center bg-no-repeat bg-cover" 
-        style="background-image: url('https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/bg-scaled-1.jpg')">
-        <h1>Morteza Torkashvand</h1>
-        <p>Front End Developer</p>
-        <div class="socials">
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+
+    <section class="content-headline">
+        <div class="grid items-center justify-center grid-cols-3 gap-[16px] w-full min-h-[100vh] bg-fixed bg-center bg-no-repeat bg-cover overflow-hidden bg-[url('https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/bg-scaled-1.jpg')">
+            <div class="column grid gap-[16px] content-start">
+                <img class="max-width[100%] max-height[100%] w-[100%] border-0 padding-0 aspect-[5/7]"
+                src="https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/screens03.png"/>
+            </div>
+            <div class="column grid gap-[16px] content-start">
+                <img class="max-width[100%] max-height[100%] w-[100%] border-0 padding-0 aspect-[5/7]"
+                src="https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/screens02.png"/>
+            </div>
+            <div class="column grid gap-[16px] content-start">
+                <img class="max-width[100%] max-height[100%] w-[100%] border-0 padding-0 aspect-[5/7]"
+                src="https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/screens01.png"/>
+            </div>
+        </div>
+        <div class="content">
+
         </div>
     </section>
     <!-- End Headline -->
 
-    <section dir="rtl" class="regular slider container text-[1.125rem] font-bold text-[#585c7b] pt-[60px] pb-[30px] mx-auto text-center bg-white dark:text-white dark:bg-gray-900">
+    <section class="regular slider container text-[1.125rem] font-bold text-[#585c7b] pt-[60px] pb-[30px] mx-auto text-center bg-white dark:text-white dark:bg-gray-900">
         <div class="h-full rounded-[16px] p-3 dark:hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300">
             <a href="#">
                 <img class="inline mx-auto rounded-[8px] dark:text-white" src="img/financial.jpg"/>  
@@ -415,7 +467,7 @@
     </section>
 
     <!-- Start Products -->
-    <section id="product" class="products container mx-auto font-[800] text-[#131022] leading-[1.3 bg-white dark:text-white dark:bg-gray-900">
+    <section class="products container mx-auto font-[800] text-[#131022] leading-[1.3 bg-white dark:text-white dark:bg-gray-900">
         <div class="title text-center">
             <h2 class="text-[2.5rem]">صفحات لندینگ</h2>
             <p class="text-[1.125rem] text-[#585c7b]">
@@ -462,6 +514,110 @@
         </div>
     </section>
     <!-- End Products -->
+
+    <section class="py-[8px] my-[32px]">
+        <div class="container">  
+          <h2 class="section-title mb-[32px] text-[2.5rem] text-center">ویژگی های بیشتر قالب سیلیکون</h2>       
+          <div class="items w-full flex flex-row flex-wrap justify-around text-right">
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-file-alt fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-desktop fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-object-ungroup fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-thumbs-up fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-file-alt fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-desktop fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-object-ungroup fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+            <div class="ml-[2px] mb-[32px] md:flex-col lg:basis-[30%] xl:basis-[20%] hover:shadow-xl cursor-pointer hover:transform hover:scale-105 duration-300">
+                <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
+                    <i class="fas fa-thumbs-up fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                </div>
+                <div class="p-[24px]">
+                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">لورم ایپسوkjkjkم</h3>
+                    <p class="text-[#585C7B] text-[14px]">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>  
+          </div>
+        </div>
+    </section>
 
     <!-- Script Page -->
     <script src="js/script.js" type="text/javascript"></script>
