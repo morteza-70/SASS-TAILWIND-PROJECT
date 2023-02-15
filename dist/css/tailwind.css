@@ -1125,14 +1125,14 @@ input:checked + .toggle-bg {
 .h-4 {
   height: 1rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-\[24px\] {
   height: 24px;
 }
 .h-\[100vh\] {
   height: 100vh;
-}
-.h-full {
-  height: 100%;
 }
 .h-auto {
   height: auto;
@@ -1143,14 +1143,11 @@ input:checked + .toggle-bg {
 .h-9 {
   height: 2.25rem;
 }
-.h-\[20\%\] {
-  height: 20%;
-}
-.h-\[80\%\] {
-  height: 80%;
-}
 .w-4 {
   width: 1rem;
+}
+.w-full {
+  width: 100%;
 }
 .w-\[46px\] {
   width: 46px;
@@ -1160,9 +1157,6 @@ input:checked + .toggle-bg {
 }
 .w-6 {
   width: 1.5rem;
-}
-.w-full {
-  width: 100%;
 }
 .w-\[300px\] {
   width: 300px;
@@ -1175,9 +1169,6 @@ input:checked + .toggle-bg {
 }
 .w-1\/2 {
   width: 50%;
-}
-.w-\[20\%\] {
-  width: 20%;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -1250,17 +1241,14 @@ input:checked + .toggle-bg {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1364,10 +1352,6 @@ input:checked + .toggle-bg {
 }
 .border-t-\[1px\] {
   border-top-width: 1px;
-}
-.border-slate-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 .border-gray-400 {
   --tw-border-opacity: 1;
@@ -1491,10 +1475,6 @@ input:checked + .toggle-bg {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1522,6 +1502,10 @@ input:checked + .toggle-bg {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -1570,6 +1554,9 @@ input:checked + .toggle-bg {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-\[12px\] {
+  font-size: 12px;
+}
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -1605,21 +1592,6 @@ input:checked + .toggle-bg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[5pc\] {
-  font-size: 5pc;
-}
-.text-\[5px\] {
-  font-size: 5px;
-}
-.text-\[10px\] {
-  font-size: 10px;
-}
-.text-\[12px\] {
-  font-size: 12px;
-}
-.text-\[13px\] {
-  font-size: 13px;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -1647,6 +1619,9 @@ input:checked + .toggle-bg {
 .leading-none {
   line-height: 1;
 }
+.leading-10 {
+  line-height: 2.5rem;
+}
 .leading-\[1\.3\] {
   line-height: 1.3;
 }
@@ -1655,21 +1630,6 @@ input:checked + .toggle-bg {
 }
 .leading-9 {
   line-height: 2.25rem;
-}
-.leading-3 {
-  line-height: .75rem;
-}
-.leading-\[5px\] {
-  line-height: 5px;
-}
-.leading-5 {
-  line-height: 1.25rem;
-}
-.leading-10 {
-  line-height: 2.5rem;
-}
-.leading-8 {
-  line-height: 2rem;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1725,6 +1685,11 @@ input:checked + .toggle-bg {
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-\[\#6366f1\] {
@@ -1932,6 +1897,10 @@ input:checked + .toggle-bg {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
+[data-mode="dark"] .dark\:border-slate-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
 [data-mode="dark"] .dark\:border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(63 131 248 / var(--tw-border-opacity));
@@ -1942,10 +1911,6 @@ input:checked + .toggle-bg {
 [data-mode="dark"] .dark\:border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-[data-mode="dark"] .dark\:border-slate-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 [data-mode="dark"] .dark\:bg-gray-900 {
   --tw-bg-opacity: 1;

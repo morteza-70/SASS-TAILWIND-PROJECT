@@ -10,7 +10,6 @@ module.exports = {
     extend: {
     },
     fontFamily: {
-      'iranyekan': 'iranyekan',
       'dana': 'dana',
     }
   },
