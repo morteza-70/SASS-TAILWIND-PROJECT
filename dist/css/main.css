@@ -1,0 +1,23 @@
+.slick-dots li.slick-active button:before {
+  color: #6366f1 !important; }
+
+.slick-dots li button:before {
+  color: gray !important; }
+
+@keyframes scale {
+  0% {
+    transform: translateY(var(--origin, 0%)); }
+  100% {
+    transform: translateY(var(--destination, -50%)); } }
+
+@media only screen and (min-width: 768px) {
+  .parent:hover .child {
+    opacity: 1;
+    height: auto;
+    overflow: none;
+    transform: translateY(0); }
+  .child {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transform: translateY(-10%); } }

@@ -24,38 +24,6 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://files.rtl-theme.com/theme/assets/img/rtl-theme-favicon.png">
-
-    <style>
-        @media only screen and (min-width: 768px){
-            .parent:hover .child {
-                opacity:1;
-                height:auto;
-                overflow:none;
-                transform: translateY(0);
-            }
-            .child {
-                opacity:0;
-                height:0;
-                overflow:hidden;
-                transform: translateY(-10%);
-            }
-        }
-        .slick-dots li.slick-active button:before {
-            color: #6366f1 !important;
-        }
-        .slick-dots li button:before {
-            color: gray !important;
-        }
-
-        @keyframes scale {
-            0% {
-                transform: translateY(var(--origin, 0%));
-            }
-            100% {
-                transform: translateY(var(--destination, -50%));
-            }
-        }
-    </style>
 </head>
 <!-- End Head -->
 <body class="font-dana dark:bg-gray-900">
@@ -289,69 +257,150 @@
             <ul>
                 <li class="relative parent group mb-1">
                     <a href="#" class="flex justify-between md:inline-flex items-center py-4 hover:text-[#6366f1] space-x-2">
-                        <span>لندینگ ها</span>
+                        <span class="font-[700]">لندینگ ها</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                     </a>
-                    <ul class="child hidden group-hover:block transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
+                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px] transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
                         <li>
                             <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
+                                صفحه معرفی الگو
                             </a>
                         </li>
                         <li>
                             <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
+                                ویترین اپلیکیشن موبایل
                             </a>
                         </li>
                         <li>
                             <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
+                                SaaS نسخه 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                مشاوره مالی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                پزشکی
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                شرکت فناوری اطلاعات (نرم افزار)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                کنفرانس
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                آژانس دیجیتال
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                صفحه اصلی وبلاگ
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="relative parent group mb-1">
                     <a href="#" class="flex justify-between md:inline-flex items-center py-4 hover:text-[#6366f1] space-x-2">
-                        <span>صفحات</span>
+                        <span class="font-[700]">صفحات</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                     </a>
-                    <ul class="child hidden group-hover:block transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
-                        <li>
-                            <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
-                            </a>
-                        </li>
+                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px] transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
+                            <li class="mb-[10px]">
+                                <span class="flex">
+                                    <h6 class="text-[16px] font-extrabold">درباره</h6>
+                                </span>
+                                <a href="#" class="flex hover:text-[#6366f1]">
+                                    درباره ۷.۱
+                                </a>
+                                <a href="#" class="flex hover:text-[#6366f1]">
+                                    درباره ۷.۱
+                                </a>
+                            </li>
+                            <li class="mb-[10px]">
+                                <span class="flex">
+                                    <h6 class="text-[16px] font-extrabold">خدمات</h6>
+                                </span>
+                                <a href="#" class="flex hover:text-[#6366f1]">
+                                    صفحه خدمات
+                                </a>
+                                <a href="#" class="flex hover:text-[#6366f1]">
+                                    جزئیات خدمات
+                                </a>
+                            </li>
+                            <li class="mb-[10px]">
+                                <span class="flex">
+                                    <h6 class="text-[16px] font-extrabold">وبلاگ</h6>
+                                </span>
+                                <a href="#" class="flex hover:text-[#6366f1]">
+                                    نمای فهرست با نوار کناری 
+                                 </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    نمای شبکه با نوار کناری 
+                                </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    فید ساده
+                                </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    پست ساده 
+                                </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    نمای شبکه با نوار کناری 
+                                </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    پادکست 
+                                </a>
+                            </li>
+                            <li class="mb-[10px]">
+                                <span class="flex">
+                                    <h6 class="text-[16px] font-extrabold">مخاطبین</h6>
+                                </span>
+                                <a href="#" class="flex hover:text-[#6366f1]">
+                                    مخاطبین v.1 
+                                 </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    مخاطبین v.2
+                                </a>
+                            </li>
+                            <li>
+                                <span class="flex">
+                                    <h6 class="text-[16px] font-extrabold">تخصص</h6>
+                                </span>
+                                <a class="flex hover:text-[#6366f1]">
+                                    خطای ۴۰۴ نسخه ۱
+                                </a>
+                                <a class="flex hover:text-[#6366f1]">
+                                    خطای ۴۰۴ نسخه ۲
+                                </a>
+                            </li>
                     </ul>
                 </li>
                 <li class="relative parent group mb-1">
                     <a href="#" class="flex justify-between md:inline-flex py-4 items-center hover:text-[#6366f1] space-x-2">
-                        <span>نمونه کارها</span>
+                        <span class="font-[700]">نمونه کارها</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                     </a>
-                    <ul class="child hidden group-hover:block transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
+                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px] transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
                         <li>
                             <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
+                                نمای شبکه
                             </a>
-                        </li>
-                        <li>
                             <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
+                                نمای لیست
                             </a>
-                        </li>
-                        <li>
                             <a href="#" class="flex hover:text-[#6366f1]">
-                                تستی
+                                نمای اسلایدر
+                            </a>
+                            <a href="#" class="flex hover:text-[#6366f1]">
+                                پروژه واحد
                             </a>
                         </li>
                     </ul>
