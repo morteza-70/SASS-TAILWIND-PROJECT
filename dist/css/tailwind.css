@@ -1294,11 +1294,6 @@ html {
 	margin-right: auto;
 }
 
-.mx-\[auto\] {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .ml-\[5px\] {
 	margin-left: 5px;
 }
@@ -1337,10 +1332,6 @@ html {
 
 .mb-\[50px\] {
 	margin-bottom: 50px;
-}
-
-.mb-\[25px\] {
-	margin-bottom: 25px;
 }
 
 .mb-\[80px\] {
@@ -1485,10 +1476,6 @@ html {
 
 .max-w-md {
 	max-width: 28rem;
-}
-
-.flex-none {
-	flex: none;
 }
 
 .flex-1 {
@@ -1648,20 +1635,12 @@ html {
 	margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
-.self-center {
-	align-self: center;
-}
-
 .overflow-hidden {
 	overflow: hidden;
 }
 
 .overflow-y-auto {
 	overflow-y: auto;
-}
-
-.whitespace-nowrap {
-	white-space: nowrap;
 }
 
 .rounded-\[8px\] {
@@ -1964,11 +1943,6 @@ html {
 	font-family: dana;
 }
 
-.text-3xl {
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-}
-
 .text-xl {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
@@ -1990,16 +1964,8 @@ html {
 	font-size: 1.25rem;
 }
 
-.text-\[40px\] {
-	font-size: 40px;
-}
-
 .text-\[18px\] {
 	font-size: 18px;
-}
-
-.text-\[30px\] {
-	font-size: 30px;
 }
 
 .text-\[20px\] {
@@ -2008,10 +1974,6 @@ html {
 
 .text-\[24px\] {
 	font-size: 24px;
-}
-
-.text-\[14px\] {
-	font-size: 14px;
 }
 
 .text-sm {
@@ -2028,24 +1990,12 @@ html {
 	font-weight: 700;
 }
 
-.font-\[800px\] {
-	font-weight: 800px;
-}
-
-.font-extrabold {
-	font-weight: 800;
-}
-
 .font-\[700\] {
 	font-weight: 700;
 }
 
 .font-\[800\] {
 	font-weight: 800;
-}
-
-.font-\[600\] {
-	font-weight: 600;
 }
 
 .font-medium {
@@ -2056,12 +2006,12 @@ html {
 	font-weight: 600;
 }
 
-.leading-none {
-	line-height: 1;
-}
-
 .leading-10 {
 	line-height: 2.5rem;
+}
+
+.leading-none {
+	line-height: 1;
 }
 
 .leading-8 {
@@ -2080,9 +2030,9 @@ html {
 	line-height: 1.5rem;
 }
 
-.text-gray-400 {
+.text-gray-600 {
 	--tw-text-opacity: 1;
-	color: rgb(156 163 175 / var(--tw-text-opacity));
+	color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -2115,11 +2065,6 @@ html {
 	color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
-.text-\[\#585C7B\] {
-	--tw-text-opacity: 1;
-	color: rgb(88 92 123 / var(--tw-text-opacity));
-}
-
 .text-gray-500 {
 	--tw-text-opacity: 1;
 	color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -2128,11 +2073,6 @@ html {
 .text-blue-600 {
 	--tw-text-opacity: 1;
 	color: rgb(28 100 242 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-	--tw-text-opacity: 1;
-	color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .opacity-25 {
