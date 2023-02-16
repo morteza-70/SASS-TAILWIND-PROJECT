@@ -1,7 +1,18 @@
-.slick-dots li.slick-active button:before {
+.theme-switch-wrapper .slider::before {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  transition: .4s;
+  content: '';
+  border-radius: 50%; }
+
+.slick-dots li.slick-active button::before {
   color: #6366f1 !important; }
 
-.slick-dots li button:before {
+.slick-dots li button::before {
   color: gray !important; }
 
 @keyframes scale {
