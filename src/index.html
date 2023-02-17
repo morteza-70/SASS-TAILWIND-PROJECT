@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fa" dir="rtl" class="dark">
-<!-- Strat Head -->
+<!-- strat head -->
 <head>
     <!-- start meta tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -9,40 +9,47 @@
     <meta name="description" content="نمونه پروژه Tailwind, SASS">
     <!-- end meta tags -->
 
-    <!-- Start Global Styles -->
+    <!-- start global styles -->
     <link href="https://files.rtl-theme.com/plugins/fonts/dana/fonts.css" rel="stylesheet" media="all"/> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous"/>    
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"/>    
     <link href="../node_modules/flowbite/dist/flowbite.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link href="../node_modules/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="../node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet"/>
     <link href="../dist/css/main.css" rel="stylesheet"/>
     <link href="../dist/css/tailwind.css" rel="stylesheet"/>
-    <!-- End Global Styles -->
+    <!-- end global styles -->
 
     <!-- title -->
     <title>نمونه پروژه Tailwind, SASS</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/rtl-theme-favicon.png">
 </head>
-<!-- End Head -->
+<!-- end head -->
 <body class="font-dana dark:bg-gray-900">
     <!-- start desktop navbar -->
     <header>
         <div class="px-auto">
-            <nav class="relative px-4 py-4 flex justify-between items-center xl:px-[230px] lg:px-[100px] bg-white dark:border-gray-600 dark:bg-gray-900">
+            <nav class="relative px-4 py-4 flex justify-between items-center xl:px-[230px]
+            lg:px-[100px] bg-white dark:border-gray-600 dark:bg-gray-900">
 
                 <!-- start logo -->
                 <div class="flex justify-center items-center text-xl font-bold dark:text-white">
                     <img src="img/logo.svg" class="inline-block mx-3 h-6 sm:h-9" alt="Silicon Logo" />
                     <span class="inline-block">سیلیکُن</span>
                 </div>
-                <ul class="hidden absolute top-[50%] transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto dark:text-white">
+                <ul class="hidden absolute top-[50%] transform -translate-y-1/2 -translate-x-1/2
+                lg:flex lg:mx-auto lg:items-center lg:w-auto dark:text-white">
                     <li class="relative parent">
                         <a href="#" class="justify-between items-center md:inline-flex p-4 hover:text-[#6366f1]">
-                            <span class="ml-[5px]">لندینگ ها</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+                            <span class="ml-[10px]">لندینگ ها</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[10px] h-[10px] fill-current" viewBox="0 0 24 24">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+                            </svg>
                         </a>
-                        <ul class="child container text-[12px] leading-10 grid grid-cols-3 gap-4 transition duration-300 md:absolute top-full right-0 md:w-[40rem] rounded-[8px] bg-white dark:text-white dark:bg-gray-900 dark:border dark:border-slate-500 shadow-lg">
+                        <ul class="child container text-[12px] leading-10 grid grid-cols-3
+                        gap-4 transition duration-300 md:absolute top-full right-0 md:w-[40rem]
+                        rounded-[8px] bg-white dark:text-white dark:bg-gray-900 dark:border
+                      dark:border-slate-500 shadow-lg">
                             <li>
                                 <span>
                                     <img class="bg-cover bg-no-repeat bg-center w-full h-full"
@@ -102,12 +109,15 @@
                     </li>
                     <li class="relative parent">
                         <a href="#" class="justify-between md:inline-flex p-4 items-center">
-                            <span class="ml-[5px]">صفحات</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                            <span class="ml-[10px]">صفحات</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[10px] h-[10px] fill-current" viewBox="0 0 24 24">
                                 <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
                             </svg>
                         </a>
-                        <ul class="child container text-[12px] leading-10 grid grid-cols-3 p-4 transition duration-300 md:absolute top-full right-0 md:w-[40rem] rounded-[8px] bg-white dark:text-white dark:bg-gray-900 dark:border dark:border-slate-500 shadow-lg">
+                        <ul class="child container text-[12px] leading-10 grid grid-cols-3
+                        p-4 transition duration-300 md:absolute top-full right-0 md:w-[40rem]
+                        rounded-[8px] bg-white dark:text-white dark:bg-gray-900
+                        dark:border dark:border-slate-500 shadow-lg">
                             <div>
                                 <li>
                                     <span class="flex">
@@ -183,12 +193,15 @@
                     </li>
                     <li class="relative parent">
                         <a href="#" class="justify-between md:inline-flex p-4 items-center">
-                            <span class="ml-[5px]">نمونه کارها</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                            <span class="ml-[10px]">نمونه کارها</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[10px] h-[10px] fill-current" viewBox="0 0 24 24">
                                 <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
                             </svg>
                         </a>
-                        <ul class="child container text-[12px] leading-10 grid grid-cols-1 p-4 transition duration-300 md:absolute top-full right-0 md:w-48 rounded-[8px] bg-white dark:text-white dark:bg-gray-900 dark:border dark:border-slate-500 shadow-lg">
+                        <ul class="child container text-[12px] leading-10 grid grid-cols-1
+                        p-4 transition duration-300 md:absolute top-full right-0 md:w-48
+                        rounded-[8px] bg-white dark:text-white dark:bg-gray-900
+                        dark:border dark:border-slate-500 shadow-lg">
                             <li>
                                 <a href="#">
                                     نمای شبکه
@@ -208,7 +221,7 @@
                 </ul>
                 <!-- end logo -->
 
-                <!-- Start slider switch -->
+                <!-- start slider switch -->
                 <div class="theme-switch-wrapper mr-auto ml-[40px] flex items-center justify-between dark:text-white">
                     <em class="text-[16px] hidden md:block dark:text-white text-gray-600">تیره</em>
                     <label class="theme-switch relative inline-block h-[24px] w-[46px] mx-[10px]" for="checkbox">
@@ -222,10 +235,12 @@
                     </label>
                     <em class="text-[16px] hidden md:block dark:text-gray-400 text-black">روشن</em>
                 </div>
-                <!-- End slider switch -->
+                <!-- end slider switch -->
                 
                 <!-- start buy button -->
-                <div class="hidden lg:flex justify-center items-center py-[10px] px-[20px] bg-[#6366f1] hover:bg-[#6366f1] text-[0.75rem] text-white font-bold rounded-[0.375rem] transition duration-200">
+                <div class="hidden lg:flex justify-center items-center py-[10px]
+                px-[20px] bg-[#6366f1] hover:bg-[#6366f1] text-[0.75rem]
+                text-white font-bold rounded-[0.375rem] transition duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                     </svg>
@@ -250,9 +265,11 @@
     <!-- end desktop navbar -->
 
     <!-- start mobile menu bar -->
-    <div class="navbar-menu relative z-50 hidden md:hidden bg-white dark:text-white dark:bg-gray-900">
+    <div class="navbar-menu relative z-50 hidden md:hidden
+  bg-white dark:text-white dark:bg-gray-900">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white dark:text-white dark:bg-gray-900 border-r overflow-y-auto">
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm
+        py-6 px-6 bg-white dark:text-white dark:bg-gray-900 overflow-y-auto">
             <div class="flex items-center mb-8">
                 <h5 class="m-0 text-[1.25rem] font-bold leading-none">
                     فهرست
@@ -265,13 +282,15 @@
             </div>
             <ul>
                 <li class="relative parent group mb-1">
-                    <a href="#" class="justify-between md:inline-flex items-center py-4 space-x-2">
-                        <span class="font-[700]">لندینگ ها</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                    <a href="#" class="justify-between md:inline-flex items-center py-4">
+                        <span class="font-[700] ml-[10px]">لندینگ ها</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[10px] h-[10px] fill-current ml-auto" viewBox="0 0 24 24">
                             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
                         </svg>
                     </a>
-                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px] transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
+                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px]
+                    transition duration-300 md:absolute top-full right-0 md:w-48 bg-white
+                    dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
                         <li>
                             <a href="#">
                                 صفحه معرفی الگو
@@ -320,90 +339,94 @@
                     </ul>
                 </li>
                 <li class="relative parent group mb-1">
-                    <a href="#" class="justify-between md:inline-flex items-center py-4 space-x-2">
-                        <span class="font-[700]">صفحات</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                    <a href="#" class="justify-between md:inline-flex items-center py-4">
+                        <span class="font-[700] ml-[10px]">صفحات</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[10px] h-[10px] fill-current ml-auto" viewBox="0 0 24 24">
                             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
                         </svg>
                     </a>
-                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px] transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
-                            <li class="mb-[10px]">
-                                <span class="flex">
-                                    <h3>درباره</h3>
-                                </span>
-                                <a href="#">
-                                    درباره ۷.۱
+                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px]
+                    transition duration-300 md:absolute top-full right-0 md:w-48 bg-white
+                  dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
+                        <li class="mb-[10px]">
+                            <span class="flex">
+                                <h3>درباره</h3>
+                            </span>
+                            <a href="#">
+                                درباره ۷.۱
+                            </a>
+                            <a href="#">
+                                درباره ۷.۱
+                            </a>
+                        </li>
+                        <li class="mb-[10px]">
+                            <span class="flex">
+                                <h3>خدمات</h3>
+                            </span>
+                            <a href="#">
+                                صفحه خدمات
+                            </a>
+                            <a href="#">
+                                جزئیات خدمات
+                            </a>
+                        </li>
+                        <li class="mb-[10px]">
+                            <span class="flex">
+                                <h3>وبلاگ</h3>
+                            </span>
+                            <a href="#">
+                                نمای فهرست با نوار کناری 
                                 </a>
-                                <a href="#">
-                                    درباره ۷.۱
+                            <a href="#">
+                                نمای شبکه با نوار کناری 
+                            </a>
+                            <a href="#">
+                                فید ساده
+                            </a>
+                            <a href="#">
+                                پست ساده 
+                            </a>
+                            <a href="#">
+                                نمای شبکه با نوار کناری 
+                            </a>
+                            <a href="#">
+                                پادکست 
+                            </a>
+                        </li>
+                        <li class="mb-[10px]">
+                            <span class="flex">
+                                <h3>مخاطبین</h3>
+                            </span>
+                            <a href="#">
+                                مخاطبین v.1 
                                 </a>
-                            </li>
-                            <li class="mb-[10px]">
-                                <span class="flex">
-                                    <h3>خدمات</h3>
-                                </span>
-                                <a href="#">
-                                    صفحه خدمات
-                                </a>
-                                <a href="#">
-                                    جزئیات خدمات
-                                </a>
-                            </li>
-                            <li class="mb-[10px]">
-                                <span class="flex">
-                                    <h3>وبلاگ</h3>
-                                </span>
-                                <a href="#">
-                                    نمای فهرست با نوار کناری 
-                                 </a>
-                                <a href="#">
-                                    نمای شبکه با نوار کناری 
-                                </a>
-                                <a href="#">
-                                    فید ساده
-                                </a>
-                                <a href="#">
-                                    پست ساده 
-                                </a>
-                                <a href="#">
-                                    نمای شبکه با نوار کناری 
-                                </a>
-                                <a href="#">
-                                    پادکست 
-                                </a>
-                            </li>
-                            <li class="mb-[10px]">
-                                <span class="flex">
-                                    <h3>مخاطبین</h3>
-                                </span>
-                                <a href="#">
-                                    مخاطبین v.1 
-                                 </a>
-                                <a href="#">
-                                    مخاطبین v.2
-                                </a>
-                            </li>
-                            <li>
-                                <span class="flex">
-                                    <h3>تخصص</h3>
-                                </span>
-                                <a href="#">
-                                    خطای ۴۰۴ نسخه ۱
-                                </a>
-                                <a href="#">
-                                    خطای ۴۰۴ نسخه ۲
-                                </a>
-                            </li>
+                            <a href="#">
+                                مخاطبین v.2
+                            </a>
+                        </li>
+                        <li>
+                            <span class="flex">
+                                <h3>تخصص</h3>
+                            </span>
+                            <a href="#">
+                                خطای ۴۰۴ نسخه ۱
+                            </a>
+                            <a href="#">
+                                خطای ۴۰۴ نسخه ۲
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="relative parent group mb-1">
-                    <a href="#" class="justify-between md:inline-flex py-4 items-center space-x-2">
-                        <span class="font-[700]">نمونه کارها</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                    <a href="#" class="justify-between md:inline-flex items-center py-4">
+                        <span class="font-[700] ml-[10px]">نمونه کارها</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[10px] h-[10px] fill-current ml-auto" viewBox="0 0 24 24">
                             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
                         </svg>
                     </a>
-                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px] transition duration-300 md:absolute top-full right-0 md:w-48 bg-white dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
+                    <ul class="child hidden group-hover:block border-r leading-8 pr-[20px]
+                    transition duration-300 md:absolute top-full right-0 md:w-48 bg-white
+                  dark:text-white dark:bg-gray-900 md:shadow-lg md:rounded-b">
                         <li>
                             <a href="#">
                                 نمای شبکه
@@ -422,7 +445,8 @@
                 </li>
             </ul>
             <div class="mt-auto">
-                <div class="flex justify-center items-center py-[10px] px-[20px] bg-[#6366f1] hover:bg-[#6366f1] text-[0.75rem] text-white font-bold rounded-[0.375rem] transition duration-200">
+                <div class="flex justify-center items-center py-[10px] px-[20px] bg-[#6366f1]
+                hover:bg-[#6366f1] text-[0.75rem] text-white font-bold rounded-[0.375rem] transition duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                     </svg>
@@ -435,57 +459,71 @@
     <!-- end mobile menu bar -->
 
     <!-- start headline -->
-    <section class="mx-auto flex flex-col space-y-10 justify-center items-center w-full h-[100vh] text-white bg-center bg-no-repeat bg-cover" 
-    style="background-image: url('https://galleryelara.ir/ghaleb/wp-content/uploads/2022/02/bg-scaled-1.jpg')">
+    <section class="mx-auto flex flex-col lg:grid lg:grid-cols-3 justify-center
+    items-center text-center lg:text-right w-full h-[100vh] text-white bg-center bg-no-repeat bg-cover" 
+    style="background-image: url('img/bg-scaled-1.jpg')">
+    <div class="flex flex-col justify-center items-center gap-y-[40px] m-auto">
         <h1 class="lg:text-[70px]">سیلیکون</h1>
         <div class="text-[18px] lg:text-[25px]">
             کسب و کار چند منظوره /
-            قالب فناوری            
+            قالب فناوری
         </div>
         <div>
-            <img class="w-[300px] lg:w-[400px]" src="img/switcher.png"/>
+            <img class="w-[300px] lg:w-[200px]" src="img/switcher.png"/>
         </div>
+    </div>
+    <div class="hidden lg:flex mx-auto">
+        <img class="h-[100vh] w-[400px]" src="img/screens01.png"/>
+    </div>
+    <div class="hidden lg:flex mx-auto">
+        <img class="h-[100vh] w-[400px]" src="img/screens03.png"/>
+    </div>
+        
     </section>
     <!-- end headline -->
 
     <!-- start slider section -->
-    <section dir="ltr" class="regular slider container text-[18px] font-bold text-[#585c7b] pt-[60px] pb-[30px] mx-auto text-center bg-white dark:text-white dark:bg-gray-900">
-        <div class="h-full rounded-[16px] p-3 dark:hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300">
+    <section dir="ltr" class="regular slider container text-[18px] font-bold
+    text-[#585c7b] pt-[60px] pb-[30px] mx-auto text-center bg-white
+  dark:text-white dark:bg-gray-900">
+        <div class="dark:hover:bg-gray-800 hover:shadow-xl hover:transform hover:scale-105 duration-300">
             <a href="">
-                <img class="inline mx-auto rounded-[8px] dark:text-white" src="img/financial.jpg"/>  
+                <img class="" src="img/financial.jpg"/>  
             </a>
-            <h3 class="mx-auto mt-[60px]"> به روز رسانی مادام العمر رایگان</h3>
+            <h4 class=""> به روز رسانی مادام العمر رایگان</h4>
         </div> 
-        <div class="h-full rounded-[16px] p-3 dark:hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300">
+        <div class="dark:hover:bg-gray-800 hover:shadow-xl hover:transform hover:scale-105 duration-300">
             <a href="">
-                <img class="inline mx-auto rounded-[8px] dark:text-white" src="img/financial.jpg"/>  
+                <img class="" src="img/financial.jpg"/>  
             </a>
-            <h3 class="mx-auto mt-[60px]"> 50+ کامپوننت انعطاف پذیر UI</h3>
+            <h4> 50+ کامپوننت انعطاف پذیر UI</h4>
         </div> 
-        <div class="h-full rounded-[16px] p-3 dark:hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300">
+        <div class="dark:hover:bg-gray-800 hover:shadow-xl hover:transform hover:scale-105 duration-300">
             <a href="">
-                <img class="inline mx-auto rounded-[8px] dark:text-white" src="img/financial.jpg"/>  
+                <img class="" src="img/financial.jpg"/>  
             </a>
-            <h3 class="mx-auto mt-[60px]"> فایل های Figma</h3>
+            <h4> فایل های Figma</h4>
         </div> 
-        <div class="h-full rounded-[16px] p-3 dark:hover:bg-gray-800  hover:shadow-xl hover:transform hover:scale-105 duration-300">
+        <div class="dark:hover:bg-gray-800 hover:shadow-xl hover:transform hover:scale-105 duration-300">
             <a href="">
-                <img class="inline mx-auto rounded-[8px] dark:text-white" src="img/financial.jpg"/>  
+                <img class="" src="img/financial.jpg"/>  
             </a>
-            <h3 class="mx-auto mt-[60px]"> حالت روشن / تاریک</h3>
+            <h4> حالت روشن / تاریک</h4>
         </div> 
     </section>
     <!-- end slider section -->
 
-    <!-- Start landing section -->
-    <section class="landing container w-full h-auto px-[20px] py-[50px] mx-auto text-center text-[#131022] leading-[1.3] bg-white dark:text-white dark:bg-gray-900">
+    <!-- start landing section -->
+    <section class="landing container w-full h-auto px-[20px] py-[50px]
+    mx-auto text-center text-[#131022] leading-[1.3] bg-white dark:text-white dark:bg-gray-900">
         <div class="mb-[50px]">
-            <h2 class="md:font-[800] md:text-[40px]">صفحات لندینگ</h2>
+            <h2 class="lg:text-[45px]">صفحات لندینگ</h2>
             <div class="mx-auto text-[18px] text-[#585c7b]">
                 از میان طرح‌بندی‌های از پیش ساخته شده صفحات لندینگ منحصربه‌فرد ما، انتخاب کنید
             </div>
         </div>
-        <div class="grid grid-flow-row gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center justify-items-start font-[700] text-[20px]">
+        <div class="grid grid-flow-row gap-x-4 gap-y-8 md:grid-cols-2
+        lg:grid-cols-3 xl:grid-cols-4 justify-center justify-items-start font-[700] text-[20px]">
             <div class="shadow-xl">
                 <img src="img/app-showcase.jpg" alt="Flexbox landing">
                 <h5>ویترین اپلیکیشن موبایل</h5>
@@ -527,12 +565,17 @@
     <!-- end landing section  -->
 
     <!-- start features section -->
-    <section class="features container px-[20px] py-[50px] mx-auto text-[#131022] leading-[1.3] bg-white dark:text-white dark:bg-gray-900">
-        <h2 class="md:font-[800] md:text-[40px] text-center mb-[80px]">ویژگی های بیشتر قالب سیلیکون</h2>       
-        <div class="items w-full grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-start justify-items-start text-right">
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+    <section class="features container px-[20px] py-[50px] mx-auto
+    text-[#131022] leading-[1.3] bg-white dark:text-white dark:bg-gray-900">
+        <h2 class="lg:text-[45px] text-center mb-[80px]">ویژگی های بیشتر قالب سیلیکون</h2>       
+        <div class="items w-full grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4
+        justify-start justify-items-start text-right">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-file-alt fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-file-alt fa-2x bg-gradient-to-l
+                    from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]">
+                    </i>
                 </div>
                 <div class="p-[24px]">
                     <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">ساخته شده با بوت استرپ ۵
@@ -542,9 +585,12 @@
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-desktop fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-desktop fa-2x bg-gradient-to-l
+                    from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]">
+                    </i>
                 </div>
                 <div class="p-[24px]">
                     <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">مستندات تفصیلی
@@ -554,69 +600,86 @@
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-object-ungroup fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-object-ungroup fa-2x bg-gradient-to-l from-[#ffffff]
+                    to-[#f4f4ff] text-[#6366f1] text-[24px]">
+
+                    </i>
                 </div>
                 <div class="p-[24px]">
-                    <h3 class="ml-[15px] mb-[15px]">رابط کاربری دوستانه برای موبایل
+                    <h3 class="font-[800] text-[16px] ml-[15px] mb-[15px]">رابط کاربری دوستانه برای موبایل
                     </h3>
                     <p>
                         جای تعجب نیست که امروزه بیش از ۸۰ درصد از کاربران با استفاده از دستگاه های تلفن همراه خود در اینترنت گشت و گذار می کنند. سیلیکون ۱۰۰% رسپانسیو است و برای نمایشگرهای لمسی کوچک بهینه شده است.                  
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-thumbs-up fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-thumbs-up fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]">
+
+                    </i>
                 </div>
                 <div class="p-[24px]">
-                    <h3 class="ml-[15px] mb-[15px]">اسلایدرهای با قابلیت لمس
+                    <h3 class="font-[800] text-[16px] ml-[15px] mb-[15px]">اسلایدرهای با قابلیت لمس
                     </h3>
                     <p>
                         در عصر صفحه‌نمایش‌های لمسی، اطمینان از تجربه کاربری عالی در تلفن همراه مهم است، به‌ویژه وقتی صحبت از اجزای رابط پرکاربرد مانند اسلایدر باشد.
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
                     <i class="fas fa-file-alt fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
                 </div>
                 <div class="p-[24px]">
-                    <h3 class="ml-[15px] mb-[15px]">کد HTML معتبر W3C
+                    <h3 class="font-[800] text-[16px] ml-[15px] mb-[15px]">کد HTML معتبر W3C
                     </h3>
                     <p>
                         همه فایل‌های HTML از طریق اعتبارسنجی W3C بررسی می‌شوند تا از 100٪ کد معتبر اطمینان حاصل شود. همانطور که احتمالا می دانید HTML نامعتبر نوآوری را محدود می کند، اما سیلیکون در هسته خود نوآورانه است.
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-desktop fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-desktop fa-2x bg-gradient-to-l from-[#ffffff]
+                    to-[#f4f4ff] text-[#6366f1] text-[24px]">
+                    </i>
                 </div>
                 <div class="p-[24px]">
-                    <h3 class="ml-[15px] mb-[15px]">توسعه خود را شروع کنید
+                    <h3 class="font-[800] text-[16px] ml-[15px] mb-[15px]">توسعه خود را شروع کنید
                     </h3>
                     <p>
                         با راه اندازی Node.js و Gulp روند توسعه خود را سریع و آسان شروع کنید. فایل های پیکربندی در بسته دانلود گنجانده شده است. اتوماسیون وظایف کامل
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-object-ungroup fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-object-ungroup fa-2x bg-gradient-to-l
+                    from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]">
+                    </i>
                 </div>
                 <div class="p-[24px]">
-                    <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">آسان برای سفارشی کردن با Sass
+                    <h3 class="font-[800] text-[16px] ml-[15px] mb-[15px]">آسان برای سفارشی کردن با Sass
                     </h3>
                     <p>
                         سیلیکون با استفاده از Sass ساخته شده است. به راحتی رنگ ها، تایپوگرافی و موارد دیگر را تغییر دهید. این بالغ ترین، پایدارترین و قدرتمندترین زبان برنامه افزودنی CSS در جهان است.
                     </p>
                 </div>
             </div>
-            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
+            <div class="rounded-[4px] ml-[2px] mb-[32px] hover:shadow-xl
+            cursor-pointer dark:hover:bg-gray-800 hover:transform hover:scale-105 duration-300">
                 <div class="inline-block text-center p-[20px] bg-[#f4f4ff] rounded-[8px] w-[70px] h-[70px]">
-                    <i class="fas fa-thumbs-up fa-2x bg-gradient-to-l from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]"></i>
+                    <i class="fas fa-thumbs-up fa-2x bg-gradient-to-l
+                    from-[#ffffff] to-[#f4f4ff] text-[#6366f1] text-[24px]">
+                    </i>
                 </div>
                 <div class="p-[24px]">
                     <h3 class="ml-[15px] mb-[15px] font-[800] text-[16px]">جاوا اسکریپت اثبات آینده
@@ -631,10 +694,11 @@
     <!-- end features section -->
 
     <!-- start footer section -->
-    <footer class="px-[20px] py-[40px] mx-auto flex-row justify-center text-center border-t-[1px] border-gray-400 dark:text-white dark:bg-gray-900">
+    <footer class="px-[20px] py-[40px] mx-auto flex-row justify-center
+    text-center border-t-[1px] border-gray-400 dark:text-white dark:bg-gray-900">
         <div class="xl:col-span-6 lg:col-span-7 md:col-span-9 col-span-11">
             <div class="container mx-auto">
-                <h2 class="mb-6 md:font-[800] md:text-[40px]">
+                <h2 class="mb-6 lg:text-[45px]">
                     <span>مشترک شدن در خبرنامه ما</span>
                 </h2>
             </div>
@@ -643,16 +707,33 @@
                     <div class="flex items-center w-full max-w-md mb-[20px] mx-auto">
                         <div class="relative w-full ml-3">
                             <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
                             </div>
-                            <input class="block bg-gray-50 border border-[#d4d7e5] text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-[#6366f1] focus:shadow-md focus:shadow-[#6366f1] focus:bg-white w-full pr-10 p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#6366f1]" name="email_address" aria-label="Email Address" placeholder="ایمیل شما" required="" type="email">
+                            <input class="block w-full pr-10 p-3 bg-gray-50 border border-[#d4d7e5]
+                            text-gray-900 text-sm rounded-lg focus:border-[#6366f1]
+                            focus:bg-[#d4d7e5] dark:bg-gray-800 dark:border-gray-600
+                            dark:placeholder-gray-400 dark:text-white"
+                            name="email_address" aria-label="Email Address" placeholder="ایمیل شما" required="" type="email">
                         </div>
                         <button>
-                            <span class="block w-full px-5 py-3 text-sm font-medium text-center text-white bg-[#6366f1] rounded-md cursor-pointer shadow-md shadow-[#6366f1] hover:shadow-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">اشتراک*</span>
+                            <span class="block w-full px-5 py-3 text-sm font-medium text-center text-white
+                            bg-[#6366f1] rounded-md cursor-pointer shadow-md shadow-[#6366f1] dark:focus:shadow-none
+                            hover:shadow-none focus:ring-4 focus:ring-blue-300 dark:bg-[#6366f1]
+                           dark:focus:ring-blue-800">
+                                اشتراک*
+                            </span>
                         </button>
                     </div>
-                    <div class="mb-[30px]">*از استفاده از قالب سیلیکون لذت ببرید و منتظر آخرین به روز رسانی ها و اخبار باشید.</div>
-                    <div class="text-sm dark:text-gray-400">© تمامی حقوق محفوظ است.</div>
+                    <div class="mb-[30px]">
+                        *از استفاده از قالب سیلیکون لذت ببرید و منتظر آخرین به روز رسانی ها و اخبار باشید.
+                    </div>
+                    <div class="text-sm dark:text-gray-400">
+                        © تمامی حقوق محفوظ است.
+                    </div>
                 </form>	
             </div>
         </div>
