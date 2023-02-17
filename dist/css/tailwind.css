@@ -1539,9 +1539,6 @@ input:checked + .toggle-bg {
 .pt-\[60px\] {
   padding-top: 60px;
 }
-.pb-\[30px\] {
-  padding-bottom: 30px;
-}
 .pr-3 {
   padding-right: 0.75rem;
 }

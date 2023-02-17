@@ -9,12 +9,6 @@
   content: '';
   border-radius: 50%; }
 
-.slick-dots li.slick-active button::before {
-  color: #6366f1 !important; }
-
-.slick-dots li button::before {
-  color: gray !important; }
-
 .slider div {
   height: 100%;
   border-radius: 16px;
@@ -30,6 +24,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px; }
+
+.slick-dots li.slick-active button::before {
+  color: #6366f1 !important; }
+
+.slick-dots li button::before {
+  color: gray !important; }
 
 .landing .grid div {
   cursor: pointer; }

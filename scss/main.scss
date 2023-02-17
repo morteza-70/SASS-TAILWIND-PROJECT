@@ -1,4 +1,4 @@
-// siwtch button
+// swither dark section
 .theme-switch-wrapper .slider::before {
     position: absolute;
     bottom: 4px;
@@ -9,17 +9,6 @@
     transition: .4s;
     content: '';
     border-radius: 50%;
-}
-
-// swither dark section
-.slick-dots li {
-    &.slick-active button::before {
-        color: #6366f1 !important;
-    }
-
-    & button::before {
-        color: gray !important;
-    }
 }
 
 // slider section
@@ -38,6 +27,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+}
+.slick-dots li {
+    &.slick-active button::before {
+        color: #6366f1 !important;
+    }
+
+    & button::before {
+        color: gray !important;
+    }
 }
 
 // landing section
